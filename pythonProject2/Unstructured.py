@@ -28,7 +28,7 @@ print(df.head())
 print("\n" + "="*50 + "\n")
 
 try:
-    nltk.data.find('sentiment/vader_lexicon')
+    nltk.data.find('F:\\PredictiveModel\\pythonProject2\\.venv\\nltk_data')
 except LookupError:
     nltk.download('vader_lexicon')
 
