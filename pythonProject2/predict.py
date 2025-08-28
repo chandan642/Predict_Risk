@@ -16,7 +16,7 @@ Internal_B = pd.read_excel("F:\Credit_Score_Modeling\Internal_Bank_Dataset.xlsx\
 External_B = pd.read_excel("F:\Credit_Score_Modeling\External_Cibil_Dataset.xlsx\External_Cibil_Dataset.xlsx")
 
 df1 = Internal_B.copy()
-df2 = Internal_B.copy()
+df2 = External_B.copy()
 
 df1 = df1.loc[df1['Age_Oldest_TL'] != -99999]
 columns_to_be_removed = []
@@ -208,6 +208,7 @@ for i, v in enumerate(['p1', 'p2', 'p3', 'p4']):
     print(f"Recall: {recall[i]}")
     print(f"F1 Score: {f1_score[i]}")
     print()
+#
+#
+# #as XGboost gave the best results¶
 
-
-#as XGboost gave the best results¶
